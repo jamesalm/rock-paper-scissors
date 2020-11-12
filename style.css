@@ -1,0 +1,59 @@
+body {
+  background-color: azure;
+}
+#container {
+  background-color: azure;
+  width: 50%;
+  min-width: 800px;
+  margin: auto;
+}
+
+h1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 45pt;
+}
+
+h2 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 25pt;
+  margin-top: -20px;
+}
+
+h5 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15pt;
+  margin-top: -5px;
+  text-decoration: underline;
+}
+
+.button {
+  display: inline-block;
+  background-color: rgb(247, 221, 134);
+  font-size: 15pt;
+  width: 135px;
+  height: 75px;
+  margin: auto;
+}
+
+.button:hover {
+  background-color: burlywood;
+}
+
+.button:active {
+  background-color: rgb(189, 157, 114);
+  transform: translateY(3px);
+}
+
+.score-container {
+  display: flex;
+}
+.scoreboard {
+  border: 2px solid black;
+  margin-top: 25px;
+  width: 175px;
+  height: 125px;
+  padding: 5px;
+}
+.second {
+  margin-left: 15px;
+}

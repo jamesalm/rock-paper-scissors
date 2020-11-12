@@ -34,7 +34,7 @@ else {
 
 };
 
-const playerSelection = prompt("Rock, Paper, Scissors?").toUpperCase();
+// const playerSelection = prompt("Rock, Paper, Scissors?").toUpperCase();
 const computerSelection = computerPlay();
 console.log(playRound(playerSelection, computerSelection));
 console.log(playerSelection, computerSelection);
