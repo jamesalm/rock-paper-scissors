@@ -7,24 +7,31 @@ function computerPlay() {
 
 function playRound(playerSelection, computerSelection) {
    let winCount = 0;
-if (playerSelection == "ROCK" && computerSelection == "Rock") {
-   return "You tied";
-} else if (playerSelection == "ROCK" && computerSelection == "Scissors") {
-   winCount++;
+   let gameConclusion = "First";
+   document.getElementById("gameUpdate").innerHTML = gameConclusion;
+if (playerSelection == "Rock" && computerSelection == "Rock") {
+   console.log("YOUR ARE HERE");
+   gameConclusion = "First Heres";
+   return "Hey";
+} else if (playerSelection == "Rock" && computerSelection == "Scissors") {
+   console.log("Here Scissors");
+   gameConclusion = "Rock ties Rock";
    return "You win! Rock crushes scissors" + winCount;
-} else if (playerSelection == "ROCK" && computerSelection == "Paper") {
+} else if (playerSelection == "Rock" && computerSelection == "Paper") {
+   console.log("Here Paper");
+   gameConclusion = "Rock ties Rock";
    return "You lose! Paper covers rock" + winCount;
-} else if (playerSelection == "PAPER" && computerSelection == "Rock") {
+} else if (playerSelection == "Paper" && computerSelection == "Rock") {
    return "You win! Paper covers rock";
-} else if (playerSelection == "PAPER" && computerSelection == "Paper") {
+} else if (playerSelection == "Paper" && computerSelection == "Paper") {
    return "You tied";
-} else if (playerSelection == "PAPER" && computerSelection == "Scissors") {
+} else if (playerSelection == "Paper" && computerSelection == "Scissors") {
    return "You lose! Scissors cuts paper";
-} else if (playerSelection == "SCISSORS" && computerSelection == "Rock") {
+} else if (playerSelection == "Scissors" && computerSelection == "Rock") {
    return "You lose! Rock crushes Scissors";
-} else if (playerSelection == "SCISSORS" && computerSelection == "Paper") {
+} else if (playerSelection == "Scissors" && computerSelection == "Paper") {
    return "You win! Scissors cuts paper";
-} else if (playerSelection == "SCISSORS" && computerSelection == "Scissors") {
+} else if (playerSelection == "Scissors" && computerSelection == "Scissors") {
    return "You tied";
 }
 else {
